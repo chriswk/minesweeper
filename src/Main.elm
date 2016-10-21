@@ -63,11 +63,12 @@ threatCount count =
 rowView : List Game.Tile -> Html Msg
 rowView tiles =
     let
+        testing = [ text "hello" ]
         children =
             tiles
                 |> List.map tileView
     in
-        div [ class "row" ] children
+        div [ class "row" ] (testing ++ children)
 
 
 tileView : Game.Tile -> Html Msg
